@@ -3,18 +3,147 @@
 /*==========  Desktop First Method  ==========*/
 
 /* Large Devices, Wide Screens */
+
 @media only screen and (max-width : 1200px)
 	/**/
 
 
 /* Medium Devices, Desktops */
+@media only screen and (max-width : 1024px)
+	.header-wrap__logo
+		margin-left: 20px
+
+
 @media only screen and (max-width : 992px)
 	/**/
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	
+	.header-wrap__menu
+		display: none
+	.hidden
+		display: block
+	//Toggle Mnu 320-767px
+
+	.toggle_mnu
+		width: 50px
+		height: 50px
+		border: none
+		float: right
+		z-index: 200
+		right: 26px
+		top: 26px
+		background-color: transparent
+		background-color: rgba(248,249,251,1)
+		border-radius: 5px
+		border: 2px solid #44c0c2
+		position: fixed
+		span
+			display: block
+
+	$w: 33px
+	$h: 3px
+
+	.sandwich 
+		width: $w
+		height: $w
+		position: absolute
+		top: 9px
+		bottom: 0
+		left: 0
+		right: 0
+		margin: auto
+		z-index: 200
+
+	.sw-topper
+		position: relative
+		top: 0
+		width: $w 
+		height: $h
+		background: #44c0c2
+		border: none
+		border-radius: 2px 2px 2px 2px
+		transition: transform 0.5s, top 0.2s
+		display: block
+
+	.sw-bottom
+		position: relative
+		width: $w
+		height: $h
+		top: 8px
+		background: #44c0c2
+		border: none
+		border-radius: 2px 2px 2px 2px
+		transition: transform 0.5s, top 0.2s
+		transition-delay: 0.2s, 0s
+	.sw-footer
+		position: relative
+		width: $w
+		height: $h
+		top: 16px
+		background: #44c0c2
+		border: none
+		border-radius: 2px 2px 2px 2px
+		transition: all 0.5s
+		transition-delay: 0.1s
+	.sandwich.active
+		.sw-topper
+			top: 11px
+			transform: rotate(-45deg)
+		.sw-bottom
+			top: 8px
+			transform: rotate(45deg)
+		.sw-footer
+			opacity: 0
+			top: 0
+			transform: rotate(180deg)
+
+
+	.hidden-mnu
+		position: fixed
+		display: none
+		top: 100px
+		right: 26px
+		background-image: url("../img/bg-top.png")
+		z-index: 200
+		background-color: #f8f9fb
+		border-radius: 5px
+
+		ul
+			float: none
+			text-align: center
+			li
+				display: block
+				margin-left: 0
+				a 
+					text-transform: none
+					line-height: 2em
+					font-size: 16px
+					font-family: "RobotoCondensed-Regular", sans-serif 
+					color: #484c55
+					padding: 0 35px
+
+				&.active
+					text-decoration: underline
+
+				&:hover
+					border-bottom: none
+		> ul
+			padding: 0
+
+			> li
+
+				
+				&:hover
+					color: #fff
+					background-color: rgba(68,192,194,.9)
+					transition: all 1s ease
+					text-decoration: none
+					a 
+						color: #fff
+
+
 	/*Disable Animation on Mobile Devices*/
 	.animated
 		/*CSS transitions*/

@@ -24,5 +24,18 @@ $(function() {
 		});
 		return false;
 	});
+	// toggle menu for small devices (767px)
+	$(".toggle_mnu").click(function() {
+			$(this).toggleClass("on");
+			$(".main-mnu").slideToggle();
+			$(".sandwich").toggleClass("active");
+		});
+
+
+	$('.main-mnu li').click(function(){
+    $(".main-mnu").slideToggle();
+    $(".sandwich").toggleClass("active");
+  });
+
 
 });

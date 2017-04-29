@@ -8,7 +8,44 @@ body
 	line-height: 1.6
 	font-family: "OpenSans", sans-serif
 	overflow-x: hidden
-	
+	margin: 0
+a 
+	text-decoration: none
 
 .hidden
 	display: none
+
+.header-wrap
+	max-width: 1170px
+	margin: 0 auto
+	position: fixed
+	
+.header-wrap__logo
+	float: left
+	margin-top: 12px
+	a 
+		font-family: "Lobster1-4", sans-serif
+		font-size: 43px
+		color: #44c0c2	
+
+.header-wrap__menu
+	float: right
+	ul 
+		list-style: none
+		padding: 0
+		margin: 0
+		li 
+			display: inline-block
+			padding: 35px 26px
+
+			a
+				font-size: 15px
+				color: #484c55 
+				
+			&:hover
+				background-color: #f8f9fb
+				border-bottom: 3px solid #49cbcd
+				a 
+					color: #49cbcd
+
+

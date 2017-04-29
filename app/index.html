@@ -39,15 +39,53 @@
 	</noscript>
 
 </head>
-
+	
 <body>
 
 	<header>
-		
+		<div class="header-wrap">
+			<div class="header-wrap__logo">
+				<a href="#">Author</a>
+			</div>
+			<div class="header-wrap__menu">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Service</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Team</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+
+
+
+		</div>
 	</header>
 
 
-	<div class="hidden"></div>
+	<div class="hidden">
+	<!-- hidden menu for small devices -->
+		<button class="toggle_mnu">
+				<span class="sandwich">
+					<span class="sw-topper"></span>
+					<span class="sw-bottom"></span>
+					<span class="sw-footer"></span>
+				</span>
+			</button>
+
+			<div class=" hidden-mnu main-mnu">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Service</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Team</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+
+	</div>
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
