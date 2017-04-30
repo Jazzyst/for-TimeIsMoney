@@ -37,5 +37,16 @@ $(function() {
     $(".sandwich").toggleClass("active");
   });
 
+	//slick slider
+	$('.single-item').slick({
+		infinite: true,
+		dots: false,
+		autoplay: false,
+		autoplaySpeed: 3000,
+		speed: 1000,
+		arrows: true,
+		nextArrow: '<span class="ti-angle-right"></span>',
+		prevArrow: '<span class="ti-angle-left"></span>',
+	});
 
 });
