@@ -30,8 +30,74 @@ body input:required:valid,
 body textarea:required:valid
 	color: #666
 
-//Custom Styles Here
+// team-section
+.team
+	h2
+		text-align: center
+		font-size: 42px
+		font-weight: normal
+		color: #4e525d
+		margin-top: 88px
+		
+.team-wrap
+	margin: 0 auto
+	max-width: 1170px
+	
 
+.team-wrap__item
+	width: 260px
+	text-align: center
+	margin-top: 122px
+
+.item__photo
+	background-color: #eeeef0
+	width: 202px
+	height: 202px
+	border-radius: 50%
+	margin: 0 auto
+	position: relative
+
+	&:hover
+		.plus
+			display: block
+
+.plus
+	position: absolute
+	top: 50%
+	left: 50%
+	-webkit-transform: translate(-50%, 50%)
+	-ms-transform: translate(-50%, 50%)
+	transform: translate(-50%, 50%)
+	display: none
+	.hor
+		height: 11px
+		width: 42px
+		background-color: #f46d6d
+		position: absolute
+		top: -5px
+		left: -22px
+	.vert
+		position: absolute
+		height: 42px
+		width: 11px
+		background-color: #f46d6d
+		top: -15px
+		right: 15px
+		z-index: 50
+
+
+.item__text
+	h4 
+		font-size: 22px
+		font-weight: normal
+		margin-top: 61px
+		margin-bottom: 0
+		line-height: 34px
+	p 
+		font-size: 14px
+		margin-top: 0
+		margin-bottom: 18px
+		line-height: 26px
 
 //ALWAYS END
 @import "media"
