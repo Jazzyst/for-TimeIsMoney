@@ -51,18 +51,17 @@ body textarea:required:valid
 .team-wrap__item
 	width: 260px
 	text-align: center
-	margin: 88px auto 0
+	margin: 88px auto 84px
 	
 
 
 .item__photo
 	background-color: #eeeef0
-	width: 202px
-	height: 202px
+	width: 201px
+	height: 201px
 	border-radius: 50%
 	margin: 0 auto
 	position: relative
-
 	&:hover
 		.plus
 			display: block
@@ -91,7 +90,6 @@ body textarea:required:valid
 		right: 15px
 		z-index: 50
 
-
 .item__text
 	h4 
 		font-size: 22px
@@ -104,6 +102,70 @@ body textarea:required:valid
 		margin-top: 0
 		margin-bottom: 18px
 		line-height: 26px
+
+	// team-section-end
+
+.tariff
+	background-color: #f1f1f1
+
+.tariff-wrap
+	max-width: 1170px
+	margin: 0 auto	
+	display: flex
+	display: -webkit-flex
+	justify-content: space-between
+	-webkit-justify-content: space-between
+	-webkit-flex-wrap: wrap
+	flex-wrap: wrap
+
+.tariff-wrap__item
+	width: 368px
+	text-align: center
+	padding-top: 92px
+	padding-bottom: 101px
+	margin: 0 auto
+
+
+.tariff-wrap__plan
+	background-color: #485460
+	color: #fff
+	h3
+		font-size: 26px
+		font-weight: normal
+		line-height: 75px
+		margin-bottom: 0
+
+.tariff-wrap__content
+	background-color: #f8f9fb
+	padding-bottom: 36px
+	p.tariff-wrap__rate
+		margin: 0
+		line-height: 69px
+		font-size: 20px
+		border-bottom: 1px solid #ecf0f1
+	ul
+		padding: 0
+		margin: 0 0 35px 0
+		list-style: none
+		li 
+			background-color: #fff
+			border-bottom: 1px solid #ecf0f1
+			color: #8c9299
+			font-size: 14px
+			line-height: 45px
+
+.tariff-wrap__button
+
+.btn
+	font-size: 17px
+	font-family: "OpenSans-Semibold", sans-serif
+	color: #fff
+	background-color: #788492
+	border-radius: 3px
+	padding: 8px 49px
+	&:hover
+		background-color: #49cbcd
+
 
 //ALWAYS END
 @import "media"

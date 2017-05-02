@@ -49,4 +49,16 @@ $(function() {
 		prevArrow: '<span class="ti-angle-left"></span>',
 	});
 
+
+	// hover of tariff-wrap__item
+ $('.btn-basic').hover(
+    function(){
+        $('.basic').css('background-color','#49cbcd');
+    },
+    function(){
+        $('.basic').css('background-color','#485460');
+    }
+);
+
+
 });
