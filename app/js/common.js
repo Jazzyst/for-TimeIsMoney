@@ -60,5 +60,21 @@ $(function() {
     }
 );
 
+$('.btn-top').hover(
+    function(){
+        $('.top').css('background-color','#49cbcd');
+    },
+    function(){
+        $('.top').css('background-color','#485460');
+    }
+);
 
+$('.btn-premium').hover(
+    function(){
+        $('.premium').css('background-color','#49cbcd');
+    },
+    function(){
+        $('.premium').css('background-color','#485460');
+    }
+);
 });
