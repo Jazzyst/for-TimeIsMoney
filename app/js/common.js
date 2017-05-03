@@ -83,6 +83,13 @@ $('.btn-premium').hover(
 $(".header-wrap__menu ul a").mPageScroll2id({
 	// offset : 50
 });
-$(".up a").mPageScroll2id();
+$(".up").mPageScroll2id();
 $(".hidden-mnu ul a").mPageScroll2id();
+
+// animation
+
+$(".team h2, .contacts h2").animated("fadeInUp", "fadeOutDown");
+$(".item1, .item2, .contacts-wrap__social").animated("fadeInLeft", "fadeOutLeft");
+$(".item3, .item4, .contacts-wrap__form").animated("fadeInRight", "fadeOutRight");
+$(".tariff-wrap__item").animated("bounceIn", "bounceOut");
 });

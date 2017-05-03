@@ -40,6 +40,7 @@ body textarea:required:valid
 		font-weight: normal
 		color: #4e525d
 		margin-top: 88px
+
 		
 .team-wrap
 	margin: 0 auto
@@ -55,7 +56,9 @@ body textarea:required:valid
 	text-align: center
 	margin: 88px auto 84px
 	
-
+.item1,
+.item4
+	+animation-delay(.5s)
 
 .item__photo
 	background-color: #eeeef0
@@ -126,7 +129,7 @@ body textarea:required:valid
 	padding-top: 92px
 	padding-bottom: 101px
 	margin: 0 auto
-
+	+animation-delay(.5s)
 
 .tariff-wrap__plan
 	background-color: #485460
@@ -296,18 +299,18 @@ textarea
 
 // contacts-section-end
 .up	
-	a
-		position: fixed
-		bottom: 20px
-		right: 10px
-		width: 50px
-		height: 50px
-		background-color: rgba(73,203,205,.9)
-		text-align: center
-		color: #fff
-		line-height: 50px
-		border-radius: 5px
+	position: fixed
+	bottom: 20px
+	right: 10px
+	width: 50px
+	height: 50px
+	background-color: rgba(73,203,205,.9)
+	text-align: center
+	color: #fff
+	line-height: 50px
+	border-radius: 5px
 
-
+.up.mPS2id-highlight
+	display: none
 //ALWAYS END
 @import "media"
