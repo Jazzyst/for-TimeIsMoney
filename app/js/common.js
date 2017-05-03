@@ -77,4 +77,12 @@ $('.btn-premium').hover(
         $('.premium').css('background-color','#485460');
     }
 );
+
+// scroll
+
+$(".header-wrap__menu ul a").mPageScroll2id({
+	// offset : 50
+});
+$(".up a").mPageScroll2id();
+$(".hidden-mnu ul a").mPageScroll2id();
 });

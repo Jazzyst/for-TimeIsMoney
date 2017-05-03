@@ -50,12 +50,12 @@
 			</div>
 			<div class="header-wrap__menu">
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Service</a></li>
+					<li><a href="#slider">Home</a></li>
+					<li><a href="#tariff">Service</a></li>
 					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Team</a></li>
+					<li><a href="#team">Team</a></li>
 					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#contacts">Contact</a></li>
 				</ul>
 			</div>
 
@@ -67,7 +67,7 @@
 	<!-- header-end -->
 
 
-	<section class="slider-wrap">
+	<section id="slider" class="slider-wrap">
 
 		<div class="single-item">
 			<div class="active slide-item"><img src="img/1.jpg" alt="img">
@@ -91,7 +91,7 @@
 
 	<!-- slider-end -->
 
-	<section class="team">
+	<section id="team" class="team">
 		<h2>The Team</h2>
 		<div class="team-wrap">
 
@@ -156,7 +156,7 @@
 
 	<!-- team-section-end -->
 
-	<section class="tariff">
+	<section id="tariff" class="tariff">
 		<div class="tariff-wrap">
 
 			<div class="tariff-wrap__item">
@@ -222,7 +222,8 @@
 	</section>
 
 	<!-- triff-section-end -->
-	<section class="contacts">
+
+	<section id="contacts" class="contacts">
 		<h2>Contact Us</h2>
 		<div class="contacts-wrap">
 			<div class="contacts-wrap__social social">
@@ -242,19 +243,17 @@
 			</div>
 			<div class="contacts-wrap__form">
 				<form action="mail.php"  method="post">
-				<input required="required" name="name" class="name" placeholder="Name" id="user_name" title="Введите Имя" pattern="^[a-zA-ZА-Яа-яЁёіІїЇ\s]{3,45}" type="text">
-				<input required="required" name="email" class="email"  placeholder="Email" id="user_email" title="Введите email" pattern="\S+@[a-z.]+" type="email">
-				<textarea name="message" placeholder="Message" data-validation-required-message="Вы не ввели сообщение" required></textarea>
+				<input required="required" name="name" class="name" placeholder="Name" id="user_name" title="Enter your Name" pattern="^[a-zA-ZА-Яа-яЁёіІїЇ\s]{3,45}" type="text">
+				<input required="required" name="email" class="email"  placeholder="Email" id="user_email" title="Enter your email" pattern="\S+@[a-z.]+" type="email">
+				<textarea name="message" placeholder="Message" data-validation-required-message="Enter your message" required></textarea>
 				<input type="submit" class="form__button" value="Send" />
 			</form>
-				
 			</div>
-			
-
-				
 			</div>
 		</section>
-
+		
+		<!-- contacts-section-end -->
+		<div class="up"><a href="#slider"><span class="ti-arrow-up"></span></a></div>
 		<div class="hidden">
 			<!-- hidden menu for small devices -->
 			<button class="toggle_mnu">
@@ -267,12 +266,12 @@
 
 			<div class=" hidden-mnu main-mnu">
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Service</a></li>
+					<li><a href="#slider">Home</a></li>
+					<li><a href="#tariff">Service</a></li>
 					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Team</a></li>
+					<li><a href="#team">Team</a></li>
 					<li><a href="#">Blog</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#contacts">Contact</a></li>
 				</ul>
 			</div>
 
