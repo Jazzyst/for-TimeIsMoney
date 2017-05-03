@@ -8,27 +8,29 @@
 
 
 *::-webkit-input-placeholder
-	color: #666
+	color: #c1c1c1
 	opacity: 1
 
 *:-moz-placeholder
-	color: #666
+	color: #c1c1c1
 	opacity: 1
 
 *::-moz-placeholder
-	color: #666
+	color: #c1c1c1
 	opacity: 1
 
 *:-ms-input-placeholder
-	color: #666
+	color: #c1c1c1
 	opacity: 1
+
+
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
-	color: #666
+	color: #c1c1c1
 body input:required:valid,
 body textarea:required:valid
-	color: #666
+	color: #c1c1c1
 
 // team-section
 .team
@@ -169,6 +171,9 @@ body textarea:required:valid
 // triff-section-end
 .contacts
 	background-image: url("../../img/bg-social.jpg")
+	background-repeat: no-repeat
+	overflow: hidden
+	background-size: cover
 	h2 
 		text-align: center
 		font-size: 42px
@@ -181,16 +186,19 @@ body textarea:required:valid
 	margin: 0 auto
 	max-width: 1170px	
 
+	
+
 .contacts-wrap__social
 	min-width: 300px
 	width: 40%
 	color: #fff
 	text-align: left
+	float: left
 	padding-bottom: 20px
 	h4
 		font-size: 24px
 		font-weight: normal
-		margin-top: 93px
+		margin-top: 58px
 		margin-bottom: 0
 	p 
 		font-size: 14px
@@ -198,21 +206,25 @@ body textarea:required:valid
 		margin-top: 0
 	p.contact-info
 		font-family: "MyriadPro-Regular", sans-serif
-		font-size: 14px
+		font-size: 13px
 		color: #bface2
-		margin-bottom: 2px
+		margin-bottom: 4px
+	p.phone
+		color: #bface2
+		margin-bottom: 4px
 
 .social__icons
 	margin-top: 35px
 	margin-bottom: 94px
 	position: relative
+	width: 160px
 	.icon
 		height: 42px
 		width: 42px
 		border-radius: 50%
 		display: inline-block
 		position: absolute
-		transition: all .3s
+	
 		&:hover
 			height: 46px
 			width: 46px
@@ -225,26 +237,61 @@ body textarea:required:valid
 	.social__icons__google
 		background-color: #e44c41
 		left: 112px
-	.fa 
-		position: absolute
-		left: 50%
-		top: 50%
-		-webkit-transform: translate(-50%, -50%)
-		-ms-transform: translate(-50%, -50%)
-		transform: translate(-50%, -50%)
-		color: #fff
-		font-size: 22px
-
-	
-	.ti-google
+	.ti-google,
+	.ti-facebook,
+	.ti-twitter-alt
 		position: absolute
 		font-size: 21px;
-
 		color: #fff
 		left: 50%
 		top: 50%
 		-webkit-transform: translate(-50%, -50%)
 		-ms-transform: translate(-50%, -50%)
 		transform: translate(-50%, -50%)
+
+
+.contacts-wrap__form
+	float: right
+	margin-top: 66px
+form 
+	
+	width: 570px
+input
+	height: 42px
+	width: 250px
+	border: none
+	background-color: #fff
+	border-radius: 3px
+	border-style: none
+	padding-left: 20px
+	font-size: 16px
+	margin-bottom: 29px
+	float: left
+input.name
+	margin-right: 28px
+textarea
+	border: none
+	background-color: #fff
+	border-radius: 3px
+	border-style: none
+	width: 532px
+	height: 144px
+	margin-bottom: 29px
+	font-size: 16px
+	color: #c1c1c1
+	font-family: "OpenSans", sans-serif
+	padding: 18px
+	resize: none
+
+.form__button
+	height: 50px
+	width: 170px
+	float: right
+	background-color: #49cbcd
+	color: #fff
+	font-size: 22px
+	padding-left: 0
+	font-family: "OpenSans", sans-serif
+	margin-bottom: 100px
 //ALWAYS END
 @import "media"

@@ -17,7 +17,6 @@
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
-	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="libs/themify-icons/themify-icons.css" />
 
 	
@@ -162,7 +161,7 @@
 
 			<div class="tariff-wrap__item">
 				<div class="tariff-wrap__plan basic">
-				<h3>Basic</h3>
+					<h3>Basic</h3>
 				</div>
 				<div class="tariff-wrap__content">
 					<p class="tariff-wrap__rate">$5.01/ Month</p>
@@ -182,7 +181,7 @@
 
 			<div class="tariff-wrap__item">
 				<div class="tariff-wrap__plan top">
-				<h3>Top</h3>
+					<h3>Top</h3>
 				</div>
 				<div class="tariff-wrap__content">
 					<p class="tariff-wrap__rate">$10.01/ Month</p>
@@ -202,7 +201,7 @@
 
 			<div class="tariff-wrap__item">
 				<div class="tariff-wrap__plan premium">
-				<h3>Premium</h3>
+					<h3>Premium</h3>
 				</div>
 				<div class="tariff-wrap__content">
 					<p class="tariff-wrap__rate">$20.01/ Month</p>
@@ -222,7 +221,7 @@
 		</div>
 	</section>
 
-<!-- triff-section-end -->
+	<!-- triff-section-end -->
 	<section class="contacts">
 		<h2>Contact Us</h2>
 		<div class="contacts-wrap">
@@ -230,43 +229,54 @@
 				<h4>Get in touch with us</h4>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's </p>
 				<div class="social__icons">
-					<a href="#" class="icon social__icons__fb"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="#" class="icon social__icons__fb"><span class="ti-facebook"></span></a>
 
-					<a href="#" class="icon social__icons__twit"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+					<a href="#" class="icon social__icons__twit"><span class="ti-twitter-alt"></span></a>
 
-<a href="#" class="icon social__icons__google"><span class="ti-google"></span></a>
+					<a href="#" class="icon social__icons__google"><span class="ti-google"></span></a>
 				</div>
 
 				<p class="contact-info">Posted by Dospel &amp; GanjaParker</p>
-				<p class="contact-info">+XX-XXXX - XXXX - XX</p>
+				<p class="phone">+XX-XXXX - XXXX - XX</p>
 				<p class="contact-info">info@mail.com</p>
 			</div>
-			<div class="contacts-wrap__form"></div>
+			<div class="contacts-wrap__form">
+				<form action="mail.php"  method="post">
+				<input required="required" name="name" class="name" placeholder="Name" id="user_name" title="Введите Имя" pattern="^[a-zA-ZА-Яа-яЁёіІїЇ\s]{3,45}" type="text">
+				<input required="required" name="email" class="email"  placeholder="Email" id="user_email" title="Введите email" pattern="\S+@[a-z.]+" type="email">
+				<textarea name="message" placeholder="Message" data-validation-required-message="Вы не ввели сообщение" required></textarea>
+				<input type="submit" class="form__button" value="Send" />
+			</form>
+				
+			</div>
+			
+
+				
+			</div>
+		</section>
+
+		<div class="hidden">
+			<!-- hidden menu for small devices -->
+			<button class="toggle_mnu">
+				<span class="sandwich">
+					<span class="sw-topper"></span>
+					<span class="sw-bottom"></span>
+					<span class="sw-footer"></span>
+				</span>
+			</button>
+
+			<div class=" hidden-mnu main-mnu">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Service</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Team</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+
 		</div>
-	</section>
-
-	<div class="hidden">
-		<!-- hidden menu for small devices -->
-		<button class="toggle_mnu">
-			<span class="sandwich">
-				<span class="sw-topper"></span>
-				<span class="sw-bottom"></span>
-				<span class="sw-footer"></span>
-			</span>
-		</button>
-
-		<div class=" hidden-mnu main-mnu">
-			<ul>
-				<li><a href="#">Home</a></li>
-				<li><a href="#">Service</a></li>
-				<li><a href="#">Portfolio</a></li>
-				<li><a href="#">Team</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Contact</a></li>
-			</ul>
-		</div>
-
-	</div>
 
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
