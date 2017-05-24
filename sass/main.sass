@@ -45,14 +45,17 @@ body textarea:required:valid
 .team-wrap
 	margin: 0 auto
 	max-width: 1170px
-	overflow: hidden
-
+	display: flex
+	display: -webkit-flex
+	justify-content: space-between
+	-webkit-justify-content: space-between
+	-webkit-flex-wrap: wrap
+	flex-wrap: wrap
 .team-wrap__item
 	width: 260px
 	text-align: center
-	margin: 88px 10px 84px
-	float: left
-
+	margin: 88px auto 84px
+	
 .item1,
 .item4
 	+animation-delay(.3s)
@@ -113,15 +116,19 @@ body textarea:required:valid
 .tariff-wrap
 	max-width: 1170px
 	margin: 0 auto	
-	overflow: hidden
+	display: flex
+	display: -webkit-flex
+	justify-content: space-between
+	-webkit-justify-content: space-between
+	-webkit-flex-wrap: wrap
+	flex-wrap: wrap
 
 .tariff-wrap__item
 	width: 368px
 	text-align: center
 	padding-top: 92px
 	padding-bottom: 101px
-	margin: 0 10px
-	float: left
+	margin: 0 auto
 	+animation-delay(.3s)
 
 .tariff-wrap__plan

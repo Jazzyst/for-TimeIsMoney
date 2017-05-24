@@ -24,6 +24,11 @@ $(function() {
 		});
 		return false;
 	});
+
+	$(".header-wrap__menu li").click(function(){
+		$(".header-wrap__menu li").removeClass("active");
+		$(this).addClass("active");
+	});
 	// toggle menu for small devices (767px)
 	$(".toggle_mnu").click(function() {
 			$(this).toggleClass("on");
